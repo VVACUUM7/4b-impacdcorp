@@ -12,7 +12,7 @@
 	}
 body{
 	/*Image for background*/
-	background-image: url("Skin_CSS/images/jacksworld.jpg"); 
+	background-image: url("images/jacksworld.jpg"); 
 	color: white;
 	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	font-size:30px;
@@ -93,7 +93,7 @@ body{
 	#linkbutton{
 		width:700px;
 		height: 500px;
-		background-image:url('Skin_CSS/images/sundae.jpg');
+		background-image:url('images/sundae.jpg');
 		font-size:100px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
 		#menubutton{
@@ -102,7 +102,7 @@ body{
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('Skin_CSS/images/jackcreep.jpg');
+		background-image: url('images/jackcreep.jpg');
 		color: purple;}
 		#tutorialbutton{
 		width:300px;
@@ -110,7 +110,7 @@ body{
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('Skin_CSS/images/jackcreep.jpg');
+		background-image: url('images/jackcreep.jpg');
 		color: purple;}
 		#skinshop{
 			font-size:50px}

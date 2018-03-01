@@ -8,6 +8,7 @@
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 #game{
+	float:center;
 	align-content:center;
 	}
 body{
@@ -34,7 +35,7 @@ body{
 	}
 /*Image for start button to start mole game*/
 .active{
-	background-image:url('images/stachejack.jpeg');
+	background-image:url('images/stacheJack.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -42,7 +43,7 @@ body{
 	padding: 75px;
 	}
 	.active1{
-	background-image:url('images/stachejack.jpeg');
+	background-image:url('images/stacheJack.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -52,7 +53,7 @@ body{
 /**/
 	
 	.silver{
-	background-image:url('images/dogjack.jpeg');
+	background-image:url('images/dogjack.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -60,7 +61,7 @@ body{
 	padding: 75px;	
 	}
 .deathmole{
-	background-image:url('images/erin.jpeg');
+	background-image:url('images/erin.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -70,7 +71,7 @@ body{
 
 	}
 .badmole{
-	background-image:url('images/sundae.jpg');
+	background-image:url('images/sundae.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -93,7 +94,7 @@ body{
 	#linkbutton{
 		width:700px;
 		height: 500px;
-		background-image:url('images/sundae.jpg');
+		background-image:url('images/sundae.png');
 		font-size:100px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
 		#menubutton{
@@ -102,7 +103,7 @@ body{
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('images/jackcreep.jpg');
+		background-image: url('images/jackcreep.png');
 		color: purple;}
 		#tutorialbutton{
 		width:300px;
@@ -110,7 +111,7 @@ body{
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('images/jackcreep.jpg');
+		background-image: url('images/jackcreep.png');
 		color: purple;}
 		#skinshop{
 			font-size:50px}

@@ -12,7 +12,7 @@
 	}
 body{
 	/*Image for background*/
-	background-image: url("../Skin CSS/images/jacksworld.jpg"); 
+	background-image: url("Skin_CSS/images/jacksworld.jpg"); 
 	color: white;
 	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	font-size:30px;
@@ -30,11 +30,11 @@ body{
 #start{
 	width: 100px;
 	height: 50px;
-	background-image: url("../images/start.png");
+	background-image: url("images/start.png");
 	}
 /*Image for start button to start mole game*/
 .active{
-	background-image:url('../images/flatjack.jpg');
+	background-image:url('images/jennamarbles.jpeg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -42,7 +42,7 @@ body{
 	padding: 75px;
 	}
 	.active1{
-	background-image:url('../images/flatjack.jpg');
+	background-image:url('images/jennamarbles.jpeg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -52,7 +52,7 @@ body{
 /**/
 	
 	.silver{
-	background-image:url('../images/dogjack.jpeg');
+	background-image:url('images/dogjack.jpeg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -60,7 +60,7 @@ body{
 	padding: 75px;	
 	}
 .deathmole{
-	background-image:url('../images/erin.jpeg');
+	background-image:url('images/erin.jpeg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -70,7 +70,7 @@ body{
 
 	}
 .badmole{
-	background-image:url('../images/sundae.jpg');
+	background-image:url('images/sundae.jpg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -93,7 +93,7 @@ body{
 	#linkbutton{
 		width:700px;
 		height: 500px;
-		background-image:url('../images/sundae.jpg');
+		background-image:url('images/sundae.jpg');
 		font-size:100px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
 		#menubutton{
@@ -102,7 +102,7 @@ body{
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('../images/jackcreep.jpg');
+		background-image: url('images/jackcreep.jpg');
 		color: purple;}
 		#tutorialbutton{
 		width:300px;
@@ -110,7 +110,7 @@ body{
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('../images/jackcreep.jpg');
+		background-image: url('images/jackcreep.jpg');
 		color: purple;}
 		#skinshop{
 			font-size:50px}

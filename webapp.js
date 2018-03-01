@@ -288,5 +288,5 @@ function skinchange(page, skin){
 	
 	function skinChange(skin){
 		document.getElementById("pagestyle").setAttribute("href", skin+".css");
-		alert(skin);
+		alert("Changed skin!");
 	}

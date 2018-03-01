@@ -34,7 +34,7 @@ body{
 	}
 /*Image for start button to start mole game*/
 .active{
-	background-image:url('images/emojijack.jpg');
+	background-image:url('images/emojijack.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -42,7 +42,7 @@ body{
 	padding: 75px;
 	}
 	.active1{
-	background-image:url('images/emojijack.jpg');
+	background-image:url('images/emojijack.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -52,7 +52,7 @@ body{
 /**/
 	
 	.silver{
-	background-image:url('images/dogjack.jpeg');
+	background-image:url('images/dogjack.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -60,7 +60,7 @@ body{
 	padding: 75px;	
 	}
 .deathmole{
-	background-image:url('images/erin.jpeg');
+	background-image:url('images/erin.png');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;

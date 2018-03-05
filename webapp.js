@@ -261,20 +261,20 @@ function addScore11(){
 
 
 //highscore 
-function savecookies(){
-	 var exdays= 69;
-	 highScore = saveScore + highScore;
-	 var d = new Date();
+function saveCookies(){
+	var exdays= 69;
+	highScore = saveScore + highScore;
+	var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = "highScore=" + highScore + expires;
 	alert("Saved!");
 
 }
-window.onload = function loadcookies(){
+window.onload = function loadCookies(){
 	var highScore = document.cookie;
 }
-function clearcookies(){
+function clearCookies(){
 	
 }
 	if(timeleft <= 0){

@@ -287,6 +287,5 @@ function skinchange(page, skin){
 	currentScore = 0;}
 	
 	function skinChange(skin){
-		document.getElementById("pagestyle").setAttribute("href", "Skin CSS/"+skin+".css");
-		alert(skin);
+		document.getElementById("pagestyle").setAttribute("href", skin+".css");
 	}

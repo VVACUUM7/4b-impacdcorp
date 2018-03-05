@@ -1,17 +1,18 @@
 // JavaScript Document
 //Defining Global Variable
- var currentScore = 0;
+var currentScore = 0;
 var downloadTimer;
 var inter;
 var inter1;
 var inter5;
 var death;
 var timeleft;
-var saveScore;
+var saveScore = 0;
 var array;
 var highScore = 0;
 var coords;
 var total = 0;
+var highScore = 0;
 
 
 // Random Function
@@ -112,6 +113,7 @@ function start() {
 		timeleft--;
 		if(timeleft == -1) {
 			total = currentScore + total;
+			document.getElementById("total").innerHTML = total;
 			clearInterval(t);
 			clearInterval(inter);
 			clearInterval(inter1);
@@ -120,9 +122,9 @@ function start() {
 			document.getElementById("start").disabled = false;
 		//makes HighScore
 			if 	(currentScore > highScore){
-	highScore = currentScore;
-	document.getElementById("highScore").innerHTML = highScore;
-		document.getElementById("totalScore").innerHTML = total;
+				highScore = currentScore;
+				document.getElementById("highScore").innerHTML = highScore;
+				document.getElementById("totalScore").innerHTML = total;
 	currentScore = 0;
 	}
 	currentScore = 0;
@@ -258,33 +260,27 @@ function addScore11(){
 	
 
 
-//highscore variable
-var highScore = 0;
-/*
+//highscore 
 function savecookies(){
 	 var exdays= 69;
 	 highScore = saveScore + highScore;
 	 var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    document.cookie = highScore;
+    document.cookie = "highScore=" + highScore + expires;
+	alert("Saved!");
 
 }
-function loadcookies(){
-	
+window.onload = function loadcookies(){
+	var highScore = document.cookie;
 }
 function clearcookies(){
 	
 }
-function skinchange(page, skin){
-	alert(page);
-	alert(skin);
-	document.getElementsById(page).setAttribute('href', skin);
-	}*/
-	  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-	var saveScore = currentScore;
-	currentScore = 0;}
+	if(timeleft <= 0){
+   		clearInterval(downloadTimer);
+		var saveScore = currentScore;
+		currentScore = 0;}
 	
 	function skinChange(skin){
 		document.getElementById("pagestyle").setAttribute("href", skin+".css");

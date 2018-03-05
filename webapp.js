@@ -15,6 +15,7 @@ var highScore = 0;
 var coords;
 var total = 0;
 var highScore = 0;
+var interTime;
 
 
 function addScore11(){
@@ -27,6 +28,17 @@ function addScore11(){
 		
 	}
 			}
+	function	addScoreTime() {
+				timeleft = timeleft + 2;
+		
+				document.getElementById("time").innerHTML = timeleft;
+				array = document.getElementsByClassName("time");
+		for( var i = 0; i < array.length; i++) {
+		array[i].removeEventListener( "click", addScoreTime);
+		array[i].setAttribute("class", "void");
+			}
+
+		}
 			
 function addScore1(){
 				currentScore++;
@@ -78,7 +90,7 @@ function removeMoles5() {
 
 function deathScore(){
 		alert("YOU HIT ERIN! YOU LOST!");
-		timeleft = 1;
+		timeleft = 0;
 }
 
 function removeMoles1() {
@@ -111,7 +123,17 @@ function removeMolesDeath() {
 		
 	}
 }
-
+function removeMolesTime() {
+		array = document.getElementsByClassName("time");
+		for( var i = 0; i < array.length; i++) {
+			//loops through and removes all +1 moles
+		array[i].removeEventListener( "click", addScoreTime);
+		array[i].setAttribute("class", "void");
+		
+	}
+	
+	}
+	
 function removeMoles11() {
 	
 //gets array of all +1 moles
@@ -198,6 +220,21 @@ function moveMoleAroundGold() {
 			//removes Gold moles after a 0.75 seconds
 			setTimeout(removeMoles10, 750);
 	}
+function moveMoleAroundTime() {
+			var coord1 = coord();
+			if (coord1 === coords){
+				coords = coord();
+				}
+				else{
+			coords = coord1;
+					}
+	//sets class
+			document.getElementById(coords).setAttribute("class", "time");
+//adds event listener
+			document.getElementById(coords).addEventListener( "click", addScoreTime );
+			//removes +1 moles after a second
+			setTimeout(removeMolesTime, 750);
+}
 
 function moveMoleAround1() {
 			var coord1 = coord();
@@ -230,6 +267,7 @@ function start() {
 	death = setInterval(moveMoleDeath,15000);
 	inter5 = setInterval(moveMoleAround5, 5000);
 	inter10 = setInterval(moveMoleAroundGold,7500);
+	interTime = setInterval(moveMoleAroundTime,10000);
 	var t=setInterval(countdown_timer, 1000); 
 
 	function countdown_timer()  {
@@ -268,25 +306,6 @@ function disableButton()
 }
 	
 	
-
-
-		
-
-		//creates a +5 mole
-
-//Creates a +1 mole		 
-
-
-
-
-
-
-
-
-
-	
-
-
 //highscore 
 function saveCookies(){
 	var exdays= 69;

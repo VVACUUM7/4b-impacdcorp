@@ -1,67 +1,63 @@
 // JavaScript Document
 //Defining Global Variable
-var currentScore = 0;
-var downloadTimer;
-var inter;
-var inter1;
-var inter5;
-var inter10;
-var death;
-var timeleft;
-var saveScore = 0;
-var array;
-var coord1;
-var highScore = 0;
-var coords;
-var total = 0;
-var highScore = 0;
-var interTime;
+	var currentScore = 0;
+	var downloadTimer;
+	var inter;
+	var inter1;
+	var inter5;
+	var inter10;
+	var death;
+	var timeleft;
+	var saveScore = 0;
+	var array;
+	var coord1;
+	var highScore = 0;
+	var coords;
+	var total = 0;
+	var highScore = 0;
+	var interTime;
 
 
 function addScore11(){
-				currentScore++;
-				document.getElementById("score").innerHTML = currentScore;
-				array = document.getElementsByClassName("active1");
+	currentScore++;
+	document.getElementById("score").innerHTML = currentScore;
+	array = document.getElementsByClassName("active1");
 		for( var i = 0; i < array.length; i++) {
 		array[i].removeEventListener( "click", addScore11);
 		array[i].setAttribute("class", "void");
 		
 	}
-			}
-	function	addScoreTime() {
-				timeleft = timeleft + 2;
-		
-				document.getElementById("time").innerHTML = timeleft;
-				array = document.getElementsByClassName("time");
+	}
+function	addScoreTime() {
+	timeleft = timeleft + 2;
+	document.getElementById("time").innerHTML = timeleft;
+	array = document.getElementsByClassName("time");
 		for( var i = 0; i < array.length; i++) {
 		array[i].removeEventListener( "click", addScoreTime);
 		array[i].setAttribute("class", "void");
-			}
-
-		}
+	}
+	}
 			
 function addScore1(){
-				currentScore++;
-				document.getElementById("score").innerHTML = currentScore;
-				array = document.getElementsByClassName("active");
+	currentScore++;
+	document.getElementById("score").innerHTML = currentScore;
+	array = document.getElementsByClassName("active");
 		for( var i = 0; i < array.length; i++) {
 		array[i].removeEventListener( "click", addScore1);
 		array[i].setAttribute("class", "void");
 		
 	}
-			}
+	}
 			
-	function addScore5(){
-				currentScore = currentScore + 5;
-		
-				document.getElementById("score").innerHTML = currentScore;
-				array = document.getElementsByClassName("silver");
+function addScore5(){
+	currentScore = currentScore + 5;
+	document.getElementById("score").innerHTML = currentScore;
+	array = document.getElementsByClassName("silver");
 		for( var i = 0; i < array.length; i++) {
 		array[i].removeEventListener( "click", addScore5);
 		array[i].setAttribute("class", "void");
-			}
-
-}
+	}
+	}
 
 function  addScore10() {
 	
